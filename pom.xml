@@ -18,11 +18,11 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>org.apache.axis2</groupId>
-			<artifactId>axis2</artifactId>
-			<version>1.6.2</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.axis2</groupId> -->
+		<!-- <artifactId>axis2</artifactId> -->
+		<!-- <version>1.6.2</version> -->
+		<!-- </dependency> -->
 
 
 		<!-- <dependency> -->
@@ -64,70 +64,71 @@
 		<!-- <version>2.4.0</version> -->
 		<!-- </dependency> -->
 
-		<dependency>
-			<groupId>org.apache.axis</groupId>
-			<artifactId>axis</artifactId>
-			<version>1.4</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.axis</groupId> -->
+		<!-- <artifactId>axis</artifactId> -->
+		<!-- <version>1.4</version> -->
+		<!-- </dependency> -->
 
 	</dependencies>
-	<build>
+	<!-- <build> -->
 
-		<plugins>
-			<plugin>
-				<groupId>org.apache.axis2</groupId>
-				<artifactId>axis2-java2wsdl-maven-plugin</artifactId>
-				<version>1.5.4</version>
-				<executions>
-					<execution>
-						<phase>process-classes</phase>
-						<goals>
-							<goal>java2wsdl</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<className>com.ratra.ws.MavenAxis2WS.MavenAxis2WebService</className>
-					<outputFileName>${project.build.directory}/MavenAxis2WebService.wsdl</outputFileName>
-				</configuration>
-			</plugin>
-		</plugins>
+	<!-- <plugins> -->
+	<!-- <plugin> -->
+	<!-- <groupId>org.apache.axis2</groupId> -->
+	<!-- <artifactId>axis2-java2wsdl-maven-plugin</artifactId> -->
+	<!-- <version>1.5.4</version> -->
+	<!-- <executions> -->
+	<!-- <execution> -->
+	<!-- <phase>process-classes</phase> -->
+	<!-- <goals> -->
+	<!-- <goal>java2wsdl</goal> -->
+	<!-- </goals> -->
+	<!-- </execution> -->
+	<!-- </executions> -->
+	<!-- <configuration> -->
+	<!-- <className>com.ratra.ws.MavenAxis2WS.MavenAxis2WebService</className> -->
+	<!-- <outputFileName>${project.build.directory}/MavenAxis2WebService.wsdl</outputFileName> -->
+	<!-- </configuration> -->
+	<!-- </plugin> -->
+	<!-- </plugins> -->
 
-		<pluginManagement>
-			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings 
-					only. It has no influence on the Maven build itself. -->
-				<plugin>
-					<groupId>org.eclipse.m2e</groupId>
-					<artifactId>lifecycle-mapping</artifactId>
-					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>
-											org.apache.axis2
-										</groupId>
-										<artifactId>
-											axis2-java2wsdl-maven-plugin
-										</artifactId>
-										<versionRange>
-											[1.5.4,)
-										</versionRange>
-										<goals>
-											<goal>java2wsdl</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore></ignore>
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
+	<!-- <pluginManagement> -->
+	<!-- <plugins> -->
+
+
+
+	<!-- <plugin> -->
+	<!-- <groupId>org.eclipse.m2e</groupId> -->
+	<!-- <artifactId>lifecycle-mapping</artifactId> -->
+	<!-- <version>1.0.0</version> -->
+	<!-- <configuration> -->
+	<!-- <lifecycleMappingMetadata> -->
+	<!-- <pluginExecutions> -->
+	<!-- <pluginExecution> -->
+	<!-- <pluginExecutionFilter> -->
+	<!-- <groupId> -->
+	<!-- org.apache.axis2 -->
+	<!-- </groupId> -->
+	<!-- <artifactId> -->
+	<!-- axis2-java2wsdl-maven-plugin -->
+	<!-- </artifactId> -->
+	<!-- <versionRange> -->
+	<!-- [1.5.4,) -->
+	<!-- </versionRange> -->
+	<!-- <goals> -->
+	<!-- <goal>java2wsdl</goal> -->
+	<!-- </goals> -->
+	<!-- </pluginExecutionFilter> -->
+	<!-- <action> -->
+	<!-- <ignore></ignore> -->
+	<!-- </action> -->
+	<!-- </pluginExecution> -->
+	<!-- </pluginExecutions> -->
+	<!-- </lifecycleMappingMetadata> -->
+	<!-- </configuration> -->
+	<!-- </plugin> -->
+	<!-- </plugins> -->
+	<!-- </pluginManagement> -->
+	<!-- </build> -->
 </project>
